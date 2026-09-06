@@ -33,6 +33,7 @@ public class UsuarioService {
         Usuario usuario = new Usuario();
         usuario.setNome(dto.nome());
         usuario.setEmail(dto.email());
+        usuario.setSenha(dto.senha());
 
         Usuario salvo = repository.save(usuario);
         return UsuarioResponseDTO.deEntidade(salvo);
