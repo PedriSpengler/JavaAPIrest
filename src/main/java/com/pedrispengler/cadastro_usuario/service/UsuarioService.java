@@ -53,6 +53,7 @@ public class UsuarioService {
         // Atualiza os dados
         usuario.setNome(dto.nome());
         usuario.setEmail(dto.email());
+        usuario.setSenha(dto.senha());
 
         // Salva e converte para Response DTO
         Usuario atualizado = repository.save(usuario);
